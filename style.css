@@ -1,0 +1,66 @@
+/* *{
+    color: rgb(113, 0, 51);
+
+} */
+
+p{
+    color: rgb(52, 130, 255);
+}
+
+header{
+    background-color: #717171;
+}
+
+main .main_content{
+    background-color: #a8fffc;
+}
+
+/* main{
+    background-color: rgba(48, 0, 219, 0.933);
+
+} */
+
+section.my_articles{
+    background-color: #ff6767;
+}
+/* decendent selectors and combination */
+header p{
+    color: greenyellow;
+}
+
+header ul li a{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+/*  dont give space since a section has a class name my_articles
+and when we give space, that means that h2 is inside the section*/
+
+
+section.my_articles h2{
+    color: rgb(234, 0, 255);
+}
+
+/* this means h2 is the direct child of section of my_articles */
+section.my_articles > h2{
+    color: rgb(44, 0, 0);
+}
+
+/* adjacent selector   */
+/* every h2 that is directed after p. In other words, 
+after h2, the next p that comes will be adjacent to follow */
+h2+p{
+    color: orange;
+}
+
+
+ul+p{
+    color: gray;
+}
+
+
+
+
+
+
